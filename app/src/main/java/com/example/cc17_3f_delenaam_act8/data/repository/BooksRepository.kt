@@ -11,7 +11,7 @@ class BooksRepository {
     private val service = RetrofitInstance.googleBooksService
 
     suspend fun searchBooks(query: String): List<Book> = withContext(Dispatchers.IO) {
-        val response = service.getBooks(query)
+        val response = service.getBooks(query, maxResults = 12)
         val bookIds = response.items?.map { it.id } ?: emptyList()
 
         bookIds.map { id ->

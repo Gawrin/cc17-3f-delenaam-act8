@@ -20,8 +20,7 @@ class BookViewModel(private val repository: BooksRepository) : ViewModel() {
     val error: LiveData<String?> = _error
 
     init {
-        // Load initial books when ViewModel is created
-        searchBooks("dogs")
+        searchBooks("mythology")
     }
 
     fun searchBooks(query: String) {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_margin="2dp"
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp">
 
@@ -17,50 +17,26 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:scaleType="centerCrop"
-            app:layout_constraintDimensionRatio="H,2:3"
+            app:layout_constraintDimensionRatio="H,3:3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@tools:sample/backgrounds/scenic" />
 
-        <!-- Info indicator icon -->
-        <ImageView
-            android:id="@+id/infoIndicator"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_margin="8dp"
-            android:alpha="0.9"
-            android:background="@drawable/placeholder"
-            android:padding="4dp"
-            android:src="@drawable/placeholder"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/white" />
-
-        <!-- Title container with gradient background -->
-        <View
-            android:id="@+id/titleBackground"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@drawable/placeholder"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bookCoverImageView" />
-
         <TextView
             android:id="@+id/bookTitleTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:background="@color/secondary_container"
             android:ellipsize="end"
+            android:fontFamily="serif"
             android:maxLines="2"
             android:padding="12dp"
             android:textColor="@color/on_surface"
-            android:textSize="14sp"
+            android:textSize="10sp"
             android:textStyle="bold"
-            android:fontFamily="serif"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/bookCoverImageView"
             tools:text="Book Title" />

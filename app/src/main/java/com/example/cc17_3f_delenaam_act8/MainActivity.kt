@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 resources.configuration.screenWidthDp >= 840 -> 4
                 resources.configuration.screenWidthDp >= 600 -> 3
                 resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE -> 3
-                else -> 2 // Phones portrait
+                else -> 3 // Phones portrait
             }
 
             layoutManager = GridLayoutManager(this@MainActivity, spanCount)

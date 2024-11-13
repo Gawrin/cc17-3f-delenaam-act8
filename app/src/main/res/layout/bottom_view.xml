@@ -17,6 +17,7 @@
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
             tools:src="@tools:sample/backgrounds/scenic" />
 
         <TextView
@@ -27,7 +28,7 @@
             android:textSize="22sp"
             android:textStyle="bold"
             android:lineSpacingMultiplier="1.1"
-            android:textColor="@color/on_surface"
+            android:textColor="?attr/colorOnSurface"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/bookDetailCoverImageView"
             app:layout_constraintTop_toTopOf="parent"
@@ -39,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="18sp"
-            android:textColor="@color/primary"
+            android:textColor="?attr/colorOnSurface"
             android:lineSpacingMultiplier="1.1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/bookDetailTitleTextView"
@@ -52,13 +53,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="16sp"
-            android:textColor="@color/secondary"
+            android:textColor="?attr/colorOnSurface"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/bookDetailTitleTextView"
             app:layout_constraintTop_toBottomOf="@id/bookDetailAuthorsTextView"
             tools:text="Publisher • 2023" />
 
-        <!-- Categories ChipGroup with horizontal scrolling -->
         <HorizontalScrollView
             android:id="@+id/categoriesScrollView"
             android:layout_width="0dp"
@@ -87,7 +87,7 @@
             android:text="Description"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/on_surface"
+            android:textColor="?attr/colorOnSurface"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/categoriesScrollView" />
@@ -100,7 +100,7 @@
             android:layout_marginTop="8dp"
             android:textSize="16sp"
             android:lineSpacingMultiplier="1.2"
-            android:textColor="@color/on_surface"
+            android:textColor="?attr/colorOnSurface"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/bookDetailDescriptionLabel"

@@ -1,28 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Core Colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="material_on_surface_stroke">#1F000000</color>
 
-    <!-- Warm brown as primary color - reminiscent of leather-bound books -->
-    <color name="seed">#8B4513</color>
-    <color name="primary">#8B4513</color>
-    <color name="on_primary">#FFFFFF</color>
-    <color name="primary_container">#FFE5D0</color>
-    <color name="on_primary_container">#2C1810</color>
+    <!-- Tea green as primary color -->
+    <color name="seed">#CAE6A2</color>
+    <color name="primary">#CAE6A2</color>
+    <color name="on_primary">#2E3D1F</color>
+    <color name="primary_container">#E6F5CA</color>
+    <color name="on_primary_container">#1A2810</color>
 
-    <!-- Aged paper color as secondary -->
-    <color name="secondary">#938069</color>
-    <color name="on_secondary">#FFFFFF</color>
-    <color name="secondary_container">#F5E6D3</color>
-    <color name="on_secondary_container">#2B2620</color>
+    <!-- Soft moss green as secondary color -->
+    <color name="secondary">#A8C089</color>
+    <color name="on_secondary">#2A3B1F</color>
+    <color name="secondary_container">#DCE9CC</color>
+    <color name="on_secondary_container">#192510</color>
 
-    <!-- Cream colored surface for paper-like background -->
-    <color name="surface">#FFFBF5</color>
-    <color name="on_surface">#1D1B17</color>
-    <color name="surface_variant">#F0E6D6</color>
-    <color name="on_surface_variant">#49443B</color>
+    <!-- Light cream surface for background -->
+    <color name="surface">#F5FCEB</color>
+    <color name="on_surface">#2E2E2E</color>
+    <color name="surface_variant">#E0E7D3</color>
+    <color name="on_surface_variant">#4B513A</color>
 
-    <!-- Warm gray for outlines -->
-    <color name="outline">#847869</color>
+    <!-- Outline color with warm gray -->
+    <color name="outline">#798478</color>
+
+    <!-- Dark theme colors -->
+    <color name="primary_dark">#6A8550</color>
+    <color name="on_primary_dark">#E6F5CA</color>
+    <color name="primary_container_dark">#556F3C</color>
+    <color name="on_primary_container_dark">#E0F2C0</color>
+
+    <color name="secondary_dark">#768969</color>
+    <color name="on_secondary_dark">#DCE9CC</color>
+    <color name="secondary_container_dark">#5E704E</color>
+    <color name="on_secondary_container_dark">#F1F6E1</color>
+
+    <color name="surface_dark">#2B3024</color>
+    <color name="on_surface_dark">#DDE4D0</color>
+    <color name="surface_variant_dark">#3E4B3A</color>
+    <color name="on_surface_variant_dark">#CAD6B9</color>
+
+    <color name="outline_dark">#A3B1A3</color>
 </resources>
