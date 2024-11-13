@@ -10,42 +10,6 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/surface">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingStart="8dp">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/placeholder"
-                    android:elevation="2dp"
-                    android:padding="4dp"
-                    android:src="@drawable/placeholder" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="serif"
-                    android:letterSpacing="0.02"
-                    android:text="@string/bookshelf_header"
-                    android:textColor="@color/primary"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </com.google.android.material.appbar.MaterialToolbar>
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -53,7 +17,6 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <!-- Search and Network Status in a vertical layout -->
         <LinearLayout
             android:id="@+id/searchContainer"
             android:layout_width="0dp"
@@ -64,20 +27,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintWidth_percent="0.35">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/searchInputLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/searchEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/search_books"
-                    android:imeOptions="actionSearch"
-                    android:inputType="text" />
-
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/networkStatusCard"

@@ -21,6 +21,7 @@
             tools:src="@tools:sample/backgrounds/scenic" />
 
         <TextView
+            android:fontFamily="@font/montserrat"
             android:id="@+id/bookDetailTitleTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -35,6 +36,7 @@
             tools:text="Book Title" />
 
         <TextView
+            android:fontFamily="@font/montserrat"
             android:id="@+id/bookDetailAuthorsTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -48,6 +50,7 @@
             tools:text="Authors" />
 
         <TextView
+            android:fontFamily="@font/montserrat"
             android:id="@+id/bookDetailPublisherTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -78,8 +81,9 @@
 
         </HorizontalScrollView>
 
-        <!-- Description Label -->
+
         <TextView
+            android:fontFamily="@font/montserrat"
             android:id="@+id/bookDetailDescriptionLabel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -92,8 +96,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/categoriesScrollView" />
 
-        <!-- Description Text -->
         <TextView
+            android:fontFamily="@font/montserrat"
             android:id="@+id/bookDetailDescriptionTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

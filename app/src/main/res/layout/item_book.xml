@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:background="@color/secondary_container"
             android:ellipsize="end"
-            android:fontFamily="serif"
+            android:fontFamily="@font/montserrat"
             android:maxLines="2"
             android:padding="12dp"
             android:textColor="@color/on_surface"

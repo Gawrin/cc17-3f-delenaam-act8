@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupRecyclerView()
-        setupSearchInput()
         observeViewModel()
     }
 
@@ -77,34 +76,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupSearchInput() {
-        binding.searchEditText?.apply {
-            setOnEditorActionListener { _, actionId, _ ->
-                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-                    performSearch()
-                    true
-                } else {
-                    false
-                }
-            }
-        }
-    }
-
-    private fun performSearch() {
-        binding.searchEditText?.text?.toString()?.let { query ->
-            if (query.isNotBlank()) {
-                viewModel.searchBooks(query)
-                hideKeyboard()
-            }
-        }
-    }
-
-    private fun hideKeyboard() {
-        binding.searchEditText?.let { view ->
-            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.hideSoftInputFromWindow(view.windowToken, 0)
-        }
-    }
 
     private fun observeViewModel() {
         viewModel.books.observe(this) { books ->
@@ -133,17 +104,8 @@ class MainActivity : AppCompatActivity() {
             }
 
 
-            binding.searchEditText?.isEnabled = !isLoading
         }
 
-        viewModel.error.observe(this) { errorMessage ->
-            errorMessage?.let {
-                binding.networkStatusCard?.isVisible = false
-                Snackbar.make(binding.root, it, Snackbar.LENGTH_LONG)
-                    .setAction("Retry") { performSearch() }
-                    .show()
-            }
-        }
     }
 
     private fun showBookDetails(book: Book) {
