@@ -31,7 +31,6 @@ class BookDetails : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         arguments?.getParcelable<Book>(ARG_BOOK)?.let { book ->
-            setupBookDetails(book)
         }
     }
 
